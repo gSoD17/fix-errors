@@ -8,10 +8,9 @@ var people = [
 
 var nameFilter = function() {
     for (var i = 0; i < people.length; i++) {
-        let name = people[i].name;
-        let age = people[i].age;
-        if (age < 50) {
-            console.log("My Name is " + name);
+        let person = people[i];
+        if (person.age < 50) {
+            console.log("My Name is " + person.name);
         }
     }
 };
